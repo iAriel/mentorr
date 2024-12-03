@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorr</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <div class="flex flex-col lg:flex-row w-full h-screen">
+        <!-- Lado esquerdo: Logo -->
+        <div class="w-full lg:w-2/6 h-64 lg:h-screen flex items-center justify-center bg-blue-950">
+            <figure>
+                <img src="./img/mentorrLogo.svg" alt="Logo">
+            </figure>
+        </div>
+
+        <!-- Lado direito: Formulário -->
+        <div class="w-full lg:w-4/6 flex flex-col items-center px-6 md:px-20 lg:px-56 pt-10 gap-8 mx-auto">
+            <!-- Título -->
+            <div class="flex w-full md:w-full items-center justify-start">
+                <h3 class="font-bold text-slate-900 text-2xl">Log In</h3>
+            </div>
+
+            <!-- Navegação (cliente/mentor) -->
+            <div class="flex w-full md:w-full border-b border-slate-300 gap-10 justify-between text-center">
+                <div class="flex-1 px-4 md:px-0 border-b-2 border-blue-700">
+                    <label class="font-semibold text-blue-700 min-w-fit">Sou cliente</label>
+                </div>
+                <div class="flex-1 px-4 md:px-0 font-semibold text-slate-700 2xl:text-base ">
+                    <label class="2xl:w-full ">Sou mentor</label>
+                </div>
+            </div>
+
+            <!-- Campo de e-mail -->
+            <div class="w-full md:w-full">
+                <label class="text-slate-600 font-semibold">E-mail</label>
+                <div class="flex justify-between border border-slate-200 rounded-lg px-5 py-2 w-full">
+                    <input class="text-slate-400 w-full outline-none" placeholder="Insira seu usuário ou e-mail" />
+                </div>
+            </div>
+
+            <!-- Campo de senha -->
+            <div class="w-full md:w-full">
+                <label class="text-slate-600 font-semibold">Senha</label>
+                <div class="flex justify-between border border-slate-200 rounded-lg px-5 py-2 w-full">
+                    <input class="text-slate-400 w-full outline-none" placeholder="*******" />
+                    <img src="./img/eye.svg" alt="">
+                </div>
+            </div>
+
+            <!-- Botão de login -->
+            <button
+                class="bg-blue-600 px-8 md:px-12 font-bold py-3 rounded-lg w-full md:w-full hover:bg-blue-700 text-white">
+                Logar
+            </button>
+
+            <!-- Separador com "ou" -->
+            <div class="flex items-center justify-center w-full md:w-full">
+                <div class="h-px bg-gray-300 flex-grow"></div>
+                <span class="mx-4 text-gray-600 text-sm">ou</span>
+                <div class="h-px bg-gray-300 flex-grow"></div>
+            </div>
+
+            <!-- Botão do Google -->
+            <div
+                class="border-2 flex justify-center items-center px-6 py-3 w-full md:w-full font-semibold rounded-lg gap-4 cursor-pointer">
+                <img src="./img/google.svg" alt="Google">
+                <p>Entrar com o Google</p>
+            </div>
+
+            <!-- Links e mensagens -->
+            <div class="flex flex-col items-start w-full md:w-full gap-4">
+                <p class="text-blue-600 underline font-semibold">Esqueci a senha</p>
+                <p class="font-semibold text-slate-600">Ainda não tem uma conta?</p>
+                <p class="text-blue-600 underline font-semibold">Crie uma conta</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
